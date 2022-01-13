@@ -1,0 +1,645 @@
+@import url(https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Tinos:wght@400;700&display=swap);
+html {
+    scroll-behavior: smooth !important
+}
+
+body {
+    font-family: Tinos, serif;
+    background: #fff;
+    color: #333
+}
+
+a {
+    color: #000;
+    transition: .5s;
+    font-size: 18px;
+    text-decoration: none
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: #ddd
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-weight: 400
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Tinos, serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 0 20px 0
+}
+
+#SignUp_btn .btn,
+#contact-form .contact-btn,
+#intro .intro-hero .btn,
+#newsletter .news-btn,
+#service .service-box .service-box-btn,
+.section-header .section-btn {
+    font-family: 'Ropa Sans', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 10px 5px 10px;
+    background-image: linear-gradient(to right, #ff05c8 0, #fa5a00 100%);
+    float: right;
+    transition: all .6s
+}
+
+#SignUp_btn .btn:hover,
+#contact-form .contact-btn:hover,
+#intro .intro-hero .btn:hover,
+#newsletter .news-btn:hover,
+#service .service-box .service-box-btn:hover,
+.section-header .section-btn:hover {
+    background-image: linear-gradient(to left, #ff05c8 0, #fa5a00 100%)
+}
+
+.btn {
+    border: none
+}
+
+.btn:focus {
+    box-shadow: none
+}
+
+.section-header h4 {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000
+}
+
+.section-header h3 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000
+}
+
+.section-header p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000
+}
+
+.section-header .section-btn {
+    float: left;
+    margin-left: 0;
+    border-radius: 10px
+}
+
+.back-to-top {
+    position: fixed;
+    background-image: linear-gradient(to right, #ff05c8 0, #fa5a00 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .5s;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 36px;
+    right: 15px;
+    bottom: 15px;
+    transition: background .5s;
+    z-index: 11
+}
+
+#header {
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .5s;
+    z-index: 997
+}
+
+#header.header-scrolled {
+    background-color: #000;
+    padding: 10px 0;
+    height: 75px
+}
+
+#header #logo {
+    float: left;
+    margin-top: 12px
+}
+
+#SignUp_btn .btn {
+    margin-top: 5px;
+    margin-left: 100px
+}
+
+#nav-menu-container {
+    margin-left: 300px;
+    display: flex;
+    line-height: 4
+}
+
+.nav-menu,
+.nav-menu * {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.nav-menu>li {
+    float: left;
+    margin-left: 15px
+}
+
+.nav-menu a {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    font-family: 'Ropa Sans', sans-serif
+}
+
+#mobile-nav ul li:hover,
+.nav-menu li.menu-active a,
+.nav-menu li:hover a {
+    background-image: linear-gradient(to right, #ff05c8 0, #fa5a00 100%)
+}
+
+#mobile-nav-toggle {
+    border: 0;
+    background: 0;
+    font-size: 28px;
+    transition: all .5s;
+    cursor: pointer;
+    float: right;
+    display: none;
+    margin-top: 10px
+}
+
+#mobile-nav-toggle i {
+    color: #fff
+}
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 280px;
+    left: -280px;
+    overflow-y: auto;
+    transition: .5s;
+    z-index: 998
+}
+
+#mobile-nav ul {
+    margin: 100px 0;
+    padding: 0;
+    list-style: none
+}
+
+#mobile-nav ul li {
+    position: relative
+}
+
+#mobile-nav ul .menu-item-active {
+    background-image: linear-gradient(to right, #ff05c8 0, #fa5a00 100%)
+}
+
+#mobile-nav ul li a {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    outline: 0;
+    text-align: center;
+    transition: all .5s;
+    font-family: 'Ropa Sans', sans-serif;
+    letter-spacing: 2px
+}
+
+#mobile-nav #SignUp_btn .btn {
+    float: left;
+    margin-left: 100px
+}
+
+body.mobile-nav-active {
+    overflow: hidden
+}
+
+body.mobile-nav-active #mobile-nav {
+    left: 0
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+    color: #fff
+}
+
+#intro {
+    background-image: url(../img/header-bg.png);
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 750px;
+    background-size: cover
+}
+
+#intro .intro-overlay {
+    content: '';
+    background-color: #100F0FCC;
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    z-index: 0
+}
+
+#intro .intro-hero {
+    margin-top: 200px;
+    text-align: center;
+    color: #fff;
+    padding: 0 115px;
+    position: relative
+}
+
+#intro .intro-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to bottom, #ff05c8 0, #fa5a00 100%);
+    width: 210px;
+    height: 425px;
+    border-radius: 30px 30px 0 0;
+    margin-left: -170px;
+    z-index: -1;
+    opacity: .5;
+    margin-top: -75px
+}
+
+#intro .intro-hero span {
+    font-size: 30px;
+    font-weight: 700
+}
+
+#intro .intro-hero h1 {
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 1.4
+}
+
+#intro .intro-hero .btn {
+    float: none;
+    margin-left: 0;
+    margin-top: 80px;
+    font-weight: 400;
+    border-radius: 20px
+}
+
+#service {
+    text-align: center;
+    position: relative;
+    margin-top: -100px;
+    padding-bottom: 100px;
+    overflow: hidden
+}
+
+#service .service-box {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #3e3e3e;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    transition: all .5s
+}
+
+#service .service-box:hover {
+    border: 2px solid #fa5a00
+}
+
+#service .service-box h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: capitalize
+}
+
+#service .service-box .service-box-btn {
+    margin-left: 0;
+    float: none;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px
+}
+
+#who-are {
+    padding-bottom: 50px;
+    overflow: hidden
+}
+
+#who-are .section-header {
+    margin-left: 50px
+}
+
+#we-do {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden
+}
+
+#we-do .section-header {
+    margin-right: 50px
+}
+
+#we-do .we-box {
+    width: 250px;
+    height: 275px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #9f9e9e;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    transition: all .5s
+}
+
+#we-do .we-box:hover {
+    border: 2px solid #fa5a00
+}
+
+#we-do .we-box .we-box-text h5 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+#we-do .we-box .we-box-text p {
+    text-align: left;
+    margin: 0
+}
+
+#we-do .we-box .we-box-text i {
+    font-size: 33px;
+    transition: .5s
+}
+
+#we-do .we-box:hover .we-box-text i {
+    color: #fa5a00
+}
+
+#team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden
+}
+
+#team .section-header {
+    padding: 0 210px
+}
+
+#team .team-box {
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #9f9e9e;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    transition: all .5s
+}
+
+#team .team-box:hover {
+    border: 2px solid #fa5a00
+}
+
+#team .team-box h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 10px
+}
+
+#team .team-box .team-social-icon {
+    padding: 5px 5px 5px 5px;
+    background-color: #e6e9ed;
+    transition: all .5s
+}
+
+#team .team-box:hover .team-social-icon {
+    background-color: #fa5a00
+}
+
+#team .team-box .team-social-icon a i {
+    font-size: 24px;
+    margin-right: 10px;
+    background-color: #fff;
+    padding: 8px;
+    color: #e6e9ed;
+    border-radius: 50%;
+    transition: .5s
+}
+
+#team .team-box:hover .team-social-icon a i {
+    background-color: #fff;
+    color: #fa5a00
+}
+
+#team .team-box .team-social-icon a:last-child i {
+    margin-right: 0
+}
+
+#blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden
+}
+
+#blog .blog-box {
+    width: 270px;
+    height: 340px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #9f9e9e;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    transition: all .5s
+}
+
+#blog .blog-box:hover {
+    border: 2px solid #fa5a00
+}
+
+#blog .blog-box h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 0
+}
+
+#blog .blog-box h5 {
+    font-size: 28px;
+    margin-bottom: 10px
+}
+
+#blog .blog-box p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px
+}
+
+#blog .blog-box .blog-box-btn i {
+    font-size: 33px;
+    transition: .5s
+}
+
+#blog .blog-box:hover .blog-box-text i {
+    color: #fa5a00
+}
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden
+}
+
+#contact .address-box,
+#contact .email-box,
+#contact .phone-box {
+    margin-bottom: 25px
+}
+
+#contact .address-box h6,
+#contact .email-box h6,
+#contact .phone-box h6 {
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 700
+}
+
+#contact #contact-form {
+    margin-top: 80px
+}
+
+#contact #contact-form #email,
+#contact #contact-form #msg,
+#contact #contact-form #name,
+#contact #contact-form #subject {
+    border: 2px solid #fa5a00;
+    margin-bottom: 20px;
+    font-size: 22px
+}
+
+.form-control:focus {
+    box-shadow: none
+}
+
+#contact-form .contact-btn {
+    float: none;
+    margin-left: 0;
+    border: 0;
+    border-radius: 20px
+}
+
+#footer {
+    background: url(../img/ruhlin-footer-bg.png);
+    padding: 50px 50px 20px 50px;
+    background-size: cover;
+    overflow: hidden
+}
+
+#footer .footer-about p {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px
+}
+
+#footer .footer-about .social-icon a i {
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    transition: .5s
+}
+
+#footer .footer-about .social-icon a:hover i {
+    color: #fff;
+    background-color: #fa5a00
+}
+
+#footer .footer-about .social-icon a:last-child i {
+    margin-right: 0
+}
+
+#footer .footer-newsletter h6,
+#footer .footer-resource h6,
+#footer .footer-support h6 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700
+}
+
+#footer .footer-resource ul,
+#footer .footer-support ul {
+    padding-left: 0
+}
+
+#footer .footer-resource ul li,
+#footer .footer-support ul li {
+    list-style: none;
+    margin-bottom: 5px
+}
+
+#footer .footer-resource ul li a,
+#footer .footer-support ul li a {
+    color: #fff
+}
+
+#newsletter #mail {
+    border: 0;
+    padding: 8px;
+    font-size: 18px;
+    color: #000
+}
+
+#newsletter .news-btn {
+    float: none;
+    margin-left: 0;
+    border: 0;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-transform: uppercase
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: #fff
+}
+
+.copyright span {
+    text-align: center;
+    display: block;
+    color: #fff
+}
